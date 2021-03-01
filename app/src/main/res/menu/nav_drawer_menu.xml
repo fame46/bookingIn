@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_booklist"
+            android:title="List Permintaan" />
+        <item
+            android:id="@+id/nav_tambah"
+            android:title="Tambah Menu" />
+        <item
+            android:id="@+id/nav_Lihat"
+            android:title="Daftar Menu" />
+        <item
+            android:id="@+id/nav_laporan"
+            android:title="Laporan" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="LogOut"/>
+    </group>
+
+</menu>

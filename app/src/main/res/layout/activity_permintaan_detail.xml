@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.PermintaanDetailActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:padding="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tvTotalBayar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvTotalBayartext"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="TOTAL BAYAR"
+        android:layout_margin="10sp"
+        android:layout_above="@+id/ln"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTotalBayar"
+        android:layout_toRightOf="@id/tvTotalBayartext"
+        android:layout_above="@id/ln"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10sp"
+        android:gravity="end"
+        android:layout_margin="10sp"
+        android:text="Rp. 20000 ,-"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnTerima"
+            android:text="terima"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="@color/orange1"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnTolak"
+            android:text="tolak"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="@color/orange1"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

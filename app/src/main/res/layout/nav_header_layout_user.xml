@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:src="@drawable/ic_real_estate"
+        android:background="@color/white"
+        android:paddingTop="50sp"
+        android:paddingBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"/>
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#e0e0e0"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:text="username"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Nomor HP"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNoHP"
+        android:text="085328641789"
+        android:textColor="#818181"
+        android:layout_marginLeft="20sp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:text="Alamat"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:text="Ketanggung"
+        android:textColor="#818181"
+        android:layout_marginLeft="20sp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#e0e0e0"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BookingIn" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#e0e0e0</item>
+        <item name="colorPrimaryVariant">@color/orange1</item>
+        <item name="colorOnPrimary">@color/orange1</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange1</item>
+        <item name="colorSecondaryVariant">@color/orange1</item>
+        <item name="colorOnSecondary">@color/orange1</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/orange1</item>
+    </style>
+</resources>

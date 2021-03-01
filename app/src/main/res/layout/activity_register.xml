@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/orange1"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5sp"
+        android:inputType="text"
+        android:hint="Username"
+        android:paddingLeft="12sp"
+        android:background="@drawable/border2"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Alamat"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5sp"
+        android:inputType="text"
+        android:hint="Alamat"
+        android:paddingLeft="12sp"
+        android:background="@drawable/border2"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Nomor HP"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etnomorHP"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5sp"
+        android:inputType="number"
+        android:hint="Nomor HP"
+        android:paddingLeft="12sp"
+        android:background="@drawable/border2"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5sp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingLeft="12sp"
+        android:background="@drawable/border2"/>
+
+    <Button
+        android:id="@+id/btnSaveRegister"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:backgroundTint="@color/orange1"
+        android:text="register"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="20sp"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

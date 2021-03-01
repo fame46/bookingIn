@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.AlatCampingFragmentUser">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:padding="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0sp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageViewBottom"
+            android:src="@drawable/ic_real_estate"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:layout_width="150sp"
+            android:layout_height="150sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30sp"
+            android:layout_below="@id/ll">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FDE9E3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="70sp"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/btnMin"
+                    android:layout_toLeftOf="@id/tvJumlah"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="70sp"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/btnPlus"
+                    android:layout_toRightOf="@id/tvJumlah"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="70sp"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvJumlahharga"
+                    android:layout_below="@id/tvJumlah"
+                    android:text="9000"
+                    android:layout_marginTop="-40sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_below="@id/cn1"
+            android:background="#FDE9E3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="-10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:text="tanggal"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="3sp"
+                android:paddingBottom="3sp"/>
+
+            <TextView
+                android:text="Lama Sewa"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="3sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FDE9E3">
+
+                <TextView
+                    android:id="@+id/tvJumlahlama"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/btnMinlama"
+                    android:layout_toLeftOf="@id/tvJumlahlama"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/btnPluslama"
+                    android:layout_toRightOf="@id/tvJumlahlama"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvJumlahhargatotal"
+                    android:layout_below="@id/tvJumlahlama"
+                    android:text="9000"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/ll2"
+            android:background="#FDE9E3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnPesan"
+                android:text="pesan"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_below="@id/imageViewBottom"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/orange1"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="5sp"
+                android:orientation="vertical"
+                android:background="@color/orange1"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="50sp">
+                <TextView
+                    android:id="@+id/tvNamaMenuBottom"
+                    android:layout_marginTop="10sp"
+                    android:text="GULAI KAMBING MUDA"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMenuBottom"
+                    android:text="Rp. 45.000,-"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

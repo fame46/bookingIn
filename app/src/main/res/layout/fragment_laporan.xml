@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".Admin.LaporanFragment">
+
+    <TextView
+        android:id="@+id/awal"
+        android:text="01-01-2021"
+        android:textColor="@color/white"
+        android:padding="5sp"
+        android:layout_marginLeft="20sp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/orange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/akhir"
+        android:text="01-01-2021"
+        android:textColor="@color/white"
+        android:padding="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/orange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="s/d"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnTampil"
+        android:layout_below="@id/awal"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:text="tampilkan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/orange1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/btnTampil"
+        android:layout_marginTop="10sp"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
